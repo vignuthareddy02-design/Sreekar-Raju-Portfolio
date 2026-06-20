@@ -50,7 +50,7 @@ LinkedIn:
 https://www.linkedin.com/in/sreekar-raju/
 
 Instagram:
-https://instagram.com/tra
+https://instagram.com/yourusername
 
 ## ⭐ Support
 
