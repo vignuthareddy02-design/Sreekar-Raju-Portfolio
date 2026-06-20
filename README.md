@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 📸 Sreekar Raju | Photography Portfolio
 
-# Run and deploy your AI Studio app
+A premium photography portfolio showcasing visual storytelling, travel photography, portraits, landscapes, and cinematic moments through an immersive digital experience.
 
-This contains everything you need to run your app locally.
+## 🌟 Features
 
-View your app in AI Studio: https://ai.studio/apps/b13b9e42-7812-4e4d-8915-69c15618d9cb
+- Cinematic Hero Section
+- Interactive Photo Gallery
+- Travel & Visual Stories
+- Smooth Animations
+- Responsive Design
+- Modern UI/UX
+- Contact & Social Links
 
-## Run Locally
+## 🚀 Live Demo
 
-**Prerequisites:**  Node.js
+Add your deployed website link here:
 
+https://your-portfolio-link.vercel.app
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Technologies Used
+
+- React.js / Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- GSAP
+- Three.js
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── assets/
+├── styles/
+└── animations/
+```
+
+## 📸 About Me
+
+I'm Sreekar Raju, a passionate photographer and visual storyteller dedicated to capturing emotions, cultures, landscapes, and unforgettable moments.
+
+## 📬 Contact
+
+Email: your-email@example.com
+
+LinkedIn:
+https://www.linkedin.com/in/sreekar-raju/
+
+Instagram:
+https://instagram.com/tra
+
+## ⭐ Support
+
+If you like this project, please give it a star on GitHub.
