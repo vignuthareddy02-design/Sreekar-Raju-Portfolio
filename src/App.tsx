@@ -653,7 +653,7 @@ export default function App() {
            {/* Creator Studio dynamic modal overlay 
           <CreatorStudio isOpen={isStudioOpen} onClose={() => setIsStudioOpen(false)} /> */}
 
-          {/* Owner Google authentication gatekeeper modal */}
+          {/* Owner Google authentication gatekeeper modal 
           <OwnerAuthModal 
             isOpen={isAuthModalOpen} 
             onClose={() => setIsAuthModalOpen(false)} 
@@ -663,7 +663,7 @@ export default function App() {
               setIsStudioOpen(true);
             }}
           />
-
+*/}
           {/* Footer Ledger */}
           <footer className="bg-black-pure border-t border-neutral-950 py-16 text-center select-none font-sans relative z-10">
             <div className="max-w-xl mx-auto px-6 flex flex-col items-center">
