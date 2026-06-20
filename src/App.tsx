@@ -650,8 +650,8 @@ export default function App() {
           {/* 10. Contact starry experience */}
           <ContactSection />
 
-           {/* Creator Studio dynamic modal overlay */}
-          <CreatorStudio isOpen={isStudioOpen} onClose={() => setIsStudioOpen(false)} />
+           {/* Creator Studio dynamic modal overlay 
+          <CreatorStudio isOpen={isStudioOpen} onClose={() => setIsStudioOpen(false)} /> */}
 
           {/* Owner Google authentication gatekeeper modal */}
           <OwnerAuthModal 
