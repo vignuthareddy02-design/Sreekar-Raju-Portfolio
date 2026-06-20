@@ -1,0 +1,6 @@
+{
+  "name": "Sreekar Raju Portfolio",
+  "description": "Cinematic photography portfolio & digital experience of Sreekar Raju, visual storyteller showcasing coastal stories, portraits, and events.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

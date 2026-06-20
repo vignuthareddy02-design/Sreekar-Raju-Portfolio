@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-gold: #D4AF37;
+  --color-gold-dim: #9C812C;
+  --color-black-pure: #000000;
+  --color-black-deep: #0A0A0A;
+  --color-black-panel: #121212;
+  --color-white-pure: #FFFFFF;
+  --color-white-soft: #F5F5F7;
+  --color-gray-soft: #A0A0A5;
+}
+
+/* Base resets & customized enhancements */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-black-pure);
+  color: var(--color-white-soft);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Award-winning scrollbar design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-black-pure);
+}
+::-webkit-scrollbar-thumb {
+  background: #1C1C1E;
+  border: 2px solid var(--color-black-pure);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dim);
+}
+
+/* Custom visual utility animations */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+@keyframes ray-shimmer {
+  0% { transform: skewX(-20deg) translateX(-100%); }
+  100% { transform: skewX(-20deg) translateX(200%); }
+}
+
+/* Custom interactive styling presets */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(12px) saturate(120%);
+  border: 1px solid rgba(245, 245, 247, 0.08);
+}
+
+.glass-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.light-ray-effect {
+  position: relative;
+  overflow: hidden;
+}
+.light-ray-effect::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 50%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.1), transparent);
+  transform: skewX(-25deg) translateX(-150%);
+  pointer-events: none;
+}
+.light-ray-effect:hover::after {
+  animation: ray-shimmer 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* High dynamic range hover scaling */
+.zoom-frame {
+  overflow: hidden;
+}
+.zoom-frame img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 1.2s ease;
+}
+.zoom-frame:hover img {
+  transform: scale(1.08);
+}
+
+/* Cinematic text reveal blocks */
+.text-reveal-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Custom interactive noise layer to give a documentary feel */
+.film-grain {
+  position: fixed;
+  top: -50%; left: -50%; right: -50%; bottom: -50%;
+  width: 200%; height: 200%;
+  background: transparent url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.015"/%3E%3C/svg%3E') repeat;
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Elegant custom transitions */
+.smooth-duration {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
