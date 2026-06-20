@@ -44,13 +44,13 @@ I'm Sreekar Raju, a passionate photographer and visual storyteller dedicated to 
 
 ## 📬 Contact
 
-Email: your-email@example.com
+Email: your-sreekarraju46@gmail.com
 
 LinkedIn:
 https://www.linkedin.com/in/sreekar-raju/
 
 Instagram:
-https://instagram.com/yourusername
+https://instagram.com/tranceofthemind
 
 ## ⭐ Support
 
